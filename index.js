@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 app.get('/', (req, res) => {
   res.json({
     status: "success",
-    message: "Halo BOOYYY! Aplikasi Node.js berhasil berjalan di Docker & Komodo! 🚀 selamat anda berhasil deplpy CI CD",
+    message: "Halo BOOYYY!sdad Aplikasi Node.js berhasil berjalan di Docker & Komodo! 🚀 selamat anda berhasil deplpy CI CD",
     timestamp: new Date()
   });
 });
