@@ -9,7 +9,8 @@ WORKDIR /app
 COPY package*.json ./
 
 # 4. Install dependencies (gunakan npm ci untuk hasil yang konsisten di production)
-RUN npm ci --only=production
+# Menggunakan npm install dengan opsi omit dev agar aman untuk production
+RUN npm install --omit=dev
 
 # 5. Salin seluruh sisa source code aplikasi ke dalam container
 COPY . .
