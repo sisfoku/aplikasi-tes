@@ -1,0 +1,7 @@
+services:
+  app:
+    image: ghcr.io/sisfoku/aplikasi-tes:latest
+    container_name: aplikasi-tes
+    ports:
+      - "3000:3000"
+    restart: always
